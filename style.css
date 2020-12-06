@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+.container {
+  padding: 20px;
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-size: 16px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+select {
+  width: 18%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+select[name="bd"],
+select[name="bm"],
+select[name="by"] {
+  width: 32.6%;
+}
+
+input[type="phone"] {
+  width: 81%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input,
+select {
+  border-radius: 10px;
+  transition: 0.3s all ease;
+}
+input:focus,
+select:focus {
+  background-color: #efefef;
+  outline: none;
+  border-radius: 0;
+}
+input {
+  color: #0000ff;
+}
+input:focus {
+  border-bottom: 2px #0000ff solid;
+}
+.gen {
+  width: 31%;
+  margin: 10px 1% 20px 1%;
+  float: left;
+}
+.gen:last-child {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+}
+
+button {
+  background-color: #0eb7f4;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 16px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 400px;
+  }
+  .signupbtn {
+    width: 80%;
+  }
+}
+
+@keyframes youtubeAnim {
+  0%,
+  100% {
+    color: #c9110f;
+  }
+  50% {
+    color: #ff0000;
+  }
+}
